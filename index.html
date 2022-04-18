@@ -1,0 +1,62 @@
+<html> 
+	<head>
+  	  	<title>Grafos</title>
+  	  	<center><h7 style="font-size:300%;">Trabajo de Grafos</h7></center>
+  	 	 <meta charset="UTF-8">
+  	 	 <meta name="viewport" content="width=device-width">
+	</head>
+	<style>
+    	img.background{
+      	width: 100%;
+    	}
+    	body {
+      	background: url(https://p4.wallpaperbetter.com/wallpaper/770/878/451/clear-sky-low-poly-landscape-mountains-wallpaper-preview.jpg); 
+      	background-size: cover;
+      	background-repeat: no-repeat;
+      	margin: 0;
+   	  	height: 100vh;
+   		}
+  	</style>
+  	<style>
+        input.largerCheckbox {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+    <style>
+        input.largersubmit {
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+	<body>
+		<a title="Universidad Tecnológica Metropolitana" href="http://www.utem.cl" target="_blank"><img src="https://www.utem.cl/wp-content/themes/utem_adm22/images/01_img_cor/00_id_corp/imagotipo_utem_767.png" width="150" height="35"/></a>
+		<form action="proceso.php" method="post">
+				<h4 style="font-size:160%;">Seleccione sus opciones para crear el Grafo:</h4>
+				<h1 style="font-size:160%;">Numero de Nodos</h0>
+				<select name="numero_nodos" style="font-size:80%;">
+ 					 <option value="1">1</option>
+ 					 <option value="2">2</option>
+ 					 <option value="3">3</option>
+ 					 <option value="4">4</option>
+ 					 <option value="5">5</option>
+ 					 <option value="6">6</option>
+ 					 <option value="7">7</option>
+ 					 <option value="8">8</option>
+ 					 <option value="9">9</option>
+ 					 <option value="10">10</option>
+				</select>
+				<h1 style="font-size:160%;">Tipo de Grafo</h0>
+				<select name="tipo_grafo" style="font-size:80%;">
+ 					 <option value="Grafo Simple">Grafo Simple</option>
+ 					 <option value="Grafo Dirigido">Grafo Dirigido</option>
+ 					 <option value="Multigrafo">Multigrafo</option>
+				</select>
+				<h1 style="font-size:160%;">Grafo Etiquetado</h0> 
+				<input name="cbEtiquetados" type="checkbox" class="largerCheckbox" checked>
+				
+			<!-- <p></p>Mensaje:<input type="text"name="mensaje" /> -->
+   		 <p style="text-align:center"><input type="submit" value="Enviar" class="largersubmit"></p>
+		</form>
+	</body>
+</html>
